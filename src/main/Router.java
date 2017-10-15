@@ -13,7 +13,8 @@ import java.util.Scanner;
  * @author Jack O'Brien
  * @author Megan Maher
  * @author Tyler McCarthy
- * @version Nov 5, 2014
+ * @author Tracy O'Brien
+ * @version Oct 15, 2017
  *******************************************************************/
 public class Router {
 	
@@ -33,6 +34,13 @@ public class Router {
 	
 	public void setIpListFile(String path) throws FileNotFoundException {
 		ipListReader = new BufferedReader(new FileReader(path));
+	}
+	
+	publiv String sampleOutput() throws IOException {
+		String out = "";
+		out += routesReader.readLine();
+		
+		return out;
 	}
 	
 	public void populateTrie() throws IOException {
